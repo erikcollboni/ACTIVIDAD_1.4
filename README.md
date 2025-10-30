@@ -94,7 +94,7 @@ Al mover `input()` a un hilo separado, el hilo de red de MQTT sigue funcionando 
 
 3.  **Terminal 2 (Jugador X):** Inicia el primer jugador.
     ```bash
-    ython3 player.py --broker localhost --port 1883 --game game1 --symbol X --name Alice
+    python3 player.py --broker localhost --port 1883 --game game1 --symbol X --name Alice
     ```
 
 4.  **Terminal 3 (Jugador O):** Inicia el segundo jugador.
