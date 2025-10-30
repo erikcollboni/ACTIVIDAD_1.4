@@ -103,7 +103,3 @@ Al mover `input()` a un hilo separado, el hilo de red de MQTT sigue funcionando 
     ```
 
 5.  Juega siguiendo las instrucciones en las terminales de los jugadores.
-
-## Instalaciones previas
-
-Para poder ejecutar el programa de fame
