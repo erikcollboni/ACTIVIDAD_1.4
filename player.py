@@ -18,7 +18,7 @@ class TicTacToePlayer:
         self.name = name
         self.moves_topic = f"tictactoe/{game_id}/moves"
         self.state_topic = f"tictactoe/{game_id}/state"
-        self.client = mqtt.Client(client_id or f"player-{name}-{self.symbol}")
+        self.client = mqtt.Client(client_id=(client_id or f"player-{name}-{self.symbol}"), callback_api_version=mqtt.CallbackAPIVersion.VERSION1)
         self.client.on_connect = self.on_connect
         self.client.on_message = self.on_message
         self.current_state = None
